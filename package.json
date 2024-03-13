@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "discord.js": "^14.14.1",
-    "react": "^18.2.0",
-    "utf-8-validate": "^6.0.3"
-  }
-}
