@@ -4,7 +4,7 @@ import About from "./pages/About";
 import Error from "./pages/Error";
 import './App.css';
 
-import Nav from "./components/Nav"
+
 import Tarifs from "./pages/Tarifs";
 
 
