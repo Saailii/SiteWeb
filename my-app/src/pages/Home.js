@@ -1,31 +1,22 @@
 import Nav from "../components/Nav";
-import "../styles/nav.css"
+import "../styles/nav.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import "../styles/home.css"
-import { Carousel } from "react-responsive-carousel"
-import infoImage from "../datas/imgCaroussel";
-
-
-
+import "../styles/home.css";
+import { createElement, useState } from "react";
 
 export default function Home() {
- 
-    return (
-        <div>
-        <Nav/>
-      
-        <Carousel infiniteLoop={true}>
-        {infoImage.map(slide => {
-            return (
-            <div key={slide.id}>
-                <img src={slide.image} alt=""></img>
-                <h1>{slide.title}</h1>
-            </div>
-            )
-        })}
+  const [isToggle, setIsToggle] = useState(false);
 
-        </Carousel>
-        
-        </div>
-    )
+  const toggled = () => {
+    setIsToggle(!isToggle);
+    console.log(isToggle);
+  };
+
+  return (
+    <div>
+      <Nav />
+      <div className="parents">{isToggle ? <h1>Vrai</h1> : <h2>Faux</h2>}</div>
+      <button onClick={toggled}>test ici</button>
+    </div>
+  );
 }
