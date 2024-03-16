@@ -1,17 +1,35 @@
-const infoImage = [ {
+const infoObjet = [
+  {
     id: 1,
-    title: "Premier titre",
-    image: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2023/4/17/FN_202302_0780-999_TripleCheeseburger_Alt_s4x3.jpg.rend.hgtvcom.1280.720.suffix/1681757742916.jpeg"
-
-
-},
-
-{
+    nomObjet: "twitter",
+    imageObjet:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png",
+    textObjet: "Cliquez pour accèdez a twitter",
+    link: "https://twitter.com",
+  },
+  {
     id: 2,
-    title: "Deuxième Titre",
-    image: "https://ewscripps.brightspotcdn.com/dims4/default/d490bb9/2147483647/strip/true/crop/1600x900+0+0/resize/1280x720!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2F68%2Fd2%2F03a972ea4d778abd3e78f7701bb1%2Fcnn-l19jb21wb25lbnrzl2ltywdll2luc3rhbmnlcy9szwrlltfkm2y2nmm0nthlywixntawntizmjg3owm0y2yxyzu5-l19wywdlcy9oxzy3zjlizwexnjbindu3mty2nwjmywjlndlly2iynjc5.JPG"
-}
+    nomObjet: "twitch",
+    imageObjet: "https://static.latribune.fr/1780917/twitch.jpg",
+    textObjet: "Cliquez pour accèdez a twitch",
+    link: "https://twitch.com",
+  },
+  {
+    id: 3,
+    nomObjet: "youtube",
+    imageObjet:
+      "https://media.graphiline.com/src/images/news/articles/ima-image-26441.jpg",
+    textObjet: "Cliquez pour accèdez a youtube",
+    link: "https://youtube.com",
+  },
+  {
+    id: 4,
+    nomObjet: "shein",
+    imageObjet:
+      "https://mma.prnewswire.com/media/2129377/SHEIN_Logo.jpg?p=facebook",
+    textObjet: "Cliquez pour accèdez a shein",
+    link: "https://shein.com",
+  },
+];
 
-]
-
-export default infoImage
+export default infoObjet;

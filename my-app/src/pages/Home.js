@@ -2,21 +2,33 @@ import Nav from "../components/Nav";
 import "../styles/nav.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import "../styles/home.css";
-import { createElement, useState } from "react";
+
+import infoObjet from "../datas/imgCaroussel";
 
 export default function Home() {
-  const [isToggle, setIsToggle] = useState(false);
-
-  const toggled = () => {
-    setIsToggle(!isToggle);
-    console.log(isToggle);
-  };
-
   return (
-    <div>
+    <div className="main">
       <Nav />
-      <div className="parents">{isToggle ? <h1>Vrai</h1> : <h2>Faux</h2>}</div>
-      <button onClick={toggled}>test ici</button>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "300px 300px",
+          gridTemplateRows: "200px 200px",
+          gap: "20px",
+        }}
+      >
+        {infoObjet.map((objet) => (
+          <div className="container">
+            <div key={objet.id} className="value">
+              <h3>{objet.nomObjet}</h3>
+              <img src={objet.imageObjet} alt={objet.nomObjet} />
+              <a href={objet.link}>
+                <p>{objet.textObjet}</p>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
