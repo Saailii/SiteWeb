@@ -12,9 +12,12 @@ export default function Home() {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: "300px 300px",
-          gridTemplateRows: "200px 200px",
-          gap: "20px",
+          gridTemplateColumns: "repeat(auto-fill, minmax(300px))",
+          gridTemplateRows: "1fr 1fr ",
+          gridColumnGap: "60px",
+          gridRowGap: "30px",
+          width: "800px",
+          margin: "auto",
         }}
       >
         {infoObjet.map((objet) => (
@@ -22,7 +25,7 @@ export default function Home() {
             <div key={objet.id} className="value">
               <h3>{objet.nomObjet}</h3>
               <img src={objet.imageObjet} alt={objet.nomObjet} />
-              <a href={objet.link}>
+              <a href={objet.link} target="blank">
                 <p>{objet.textObjet}</p>
               </a>
             </div>
