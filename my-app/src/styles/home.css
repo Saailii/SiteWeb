@@ -1,3 +1,11 @@
+.container {
+width: 1000px;
+margin: auto;
+margin-top: 100px;
+}
+
+
+
 .value {
   width: 300px;
   height: 200px;
@@ -7,8 +15,10 @@
   justify-content: center;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.1s ease-in-out;
   img {
     width: 100px;
+    height: 70px;
   }
 
   h3 {
@@ -18,4 +28,12 @@
     text-decoration: none;
     color: black;
   }
+  
 }
+
+.value:hover {
+  transform: scale(1.1);
+}
+
+
+

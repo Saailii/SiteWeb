@@ -4,13 +4,13 @@ export default function Nav() {
   return (
     <nav>
       <div className="ChooseLink">
-        <li>
+        <li className="link">
           <Link to={"/about"}>About me</Link>
         </li>
-        <li>
+        <li className="link">
           <Link to={"/tarifs"}>Tarifs</Link>
         </li>
-        <li>
+        <li className="link">
           <Link to={"/contact"}>Contact</Link>
         </li>
       </div>
