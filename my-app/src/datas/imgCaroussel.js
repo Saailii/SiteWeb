@@ -30,6 +30,7 @@ const infoObjet = [
     textObjet: "Cliquez pour accèdez a shein",
     link: "https://shein.com",
   },
+  
 ];
 
 export default infoObjet;
